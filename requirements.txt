@@ -1,0 +1,4 @@
+numpy
+schedule
+pymongo
+git+https://github.com/oanda/oandapy.git
