@@ -3,7 +3,7 @@ import time
 from src.model.util import Util
 from src.model.service.only_latest_p_day_service import OnlyLatestPDayService
 
-# TODO ログ吐き出しする
+# TODO ログ出力する
 if __name__ == '__main__':
     # 土日を除く、07:00-24:00で取引
     if Util.is_market_open_date():

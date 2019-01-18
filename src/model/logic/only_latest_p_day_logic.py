@@ -33,6 +33,7 @@ class OnlyLatestPDayLogic:
                 # 終値＞始値
                 return self.long_trade
         else:
+            print('始値(%s)と終値(%s)に%spips以上の開きがありません。' % (self._o, self._c, self._v)) #TODO ログ出力のやり方を統一する
             return None
 
     """
