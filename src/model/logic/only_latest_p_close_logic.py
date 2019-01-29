@@ -49,10 +49,10 @@ class OnlyLatestPCloseLogic:
     現在の値が、予測終値よりxpips以上高いか判定
     """
     def is_higher_than_close(self, current_rate):
-        return self._c - current_rate[self.BID] > self._v_yen
+        return current_rate[self.BID] - self._c  > self._v_yen
 
     """
     現在の値が、予測終値よりxpips以上低いか判定
     """
     def is_lower_than_close(self, current_rate):
-        return current_rate[self.ASK] - self._c > self._v_yen
+        return  self._c - current_rate[self.ASK] > self._v_yen
